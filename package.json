@@ -1,0 +1,19 @@
+{
+  "name": "ravetab",
+  "version": "0.0.1",
+  "description": "ravetab.com is an audio visualizer on the web",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpopv/ravetab.git"
+  },
+  "author": "Matt Popovich <mattpopovich@outlook.com> (http://mattpopovich.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mpopv/ravetab/issues"
+  },
+  "homepage": "https://github.com/mpopv/ravetab#readme"
+}
