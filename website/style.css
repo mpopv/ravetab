@@ -112,6 +112,7 @@ button:hover {
 .aboutinstructions {
   width: 100%;
   height: auto;
+  border: 15px solid #efefef;
 }
 
 .about.show {
