@@ -8,6 +8,7 @@ body,
 html {
   height: 100%;
   background-color: #000;
+  font-family: sans-serif;
 }
 
 body {
@@ -39,8 +40,14 @@ button.fullscreen {
   left: initial;
   right: 5px;
 }
+button.aboutbtn {
+  left: initial;
+  bottom: initial;
+  top: 5px;
+  right: 5px;
+}
 
-p {
+p, h2 {
   color: #fff;
 }
 
@@ -48,6 +55,64 @@ p {
   color: #ff0000;
 }
 
+.warning {
+  outline: 4px solid red;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
 .warning.hide {
   display: none;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: black;
+  color: rgba(255,255,255,0.3);
+  border: 1px solid rgba(255,255,255,0.225);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: white;
+  border-color: white;
+  color: black;
+}
+
+.about {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  color: black;
+}
+.about p, .about h2 {
+  color: black;
+}
+
+.about a {
+  float: right;
+  margin: 10px;
+}
+
+.aboutimg {
+  float: left;
+  margin: 10px 20px 20px 10px;
+  width: 100px;
+  height: auto;
+}
+
+.aboutinstructions {
+  width: 100%;
+  height: auto;
+}
+
+.about.show {
+  display: initial;
 }

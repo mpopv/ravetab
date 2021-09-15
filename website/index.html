@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="icon" type="image/jpeg" href="./assets/ravetab.jpg" />
     <link rel="stylesheet" href="./style.css" />
     <script defer type="module" src="./index.js"></script>
   </head>
   <body>
+    <canvas width="2000" height="1500"></canvas>
+
+    <button>Choose tab</button>
+    <button class="fullscreen">Full screen</button>
+    <button class="aboutbtn">About</button>
+
     <div class="warning">
-      <p><span class="red">WARNING:</span> FLASHING RED LIGHTS</p>
+      <h2><span class="red">WARNING:</span> Flashing red lights</h2>
+      <br/>
       <p>
-        This tool is extremely dangerous for those prone to photosensitive
+        This website is a visualizer. It includes rapidly flashing red lights. It is extremely dangerous for those prone to photosensitive
         seizures.
       </p>
+      <br/>
       <p>Please do not use this if you are prone to photosensitive seizures.</p>
     </div>
 
-    <canvas width="2000" height="1500"></canvas>
-
-    <button>start</button>
-
-    <button class="fullscreen">fullscreen</button>
+    <div class="about">
+      <a href="#" tabindex="0" class="closeabout">Close this</a>
+      <img class="aboutimg" src="./assets/ravetab.jpg" />
+      <h2>
+        ravetab.com is an audio visualizer for one of your other Chrome tabs.
+      </h2>
+      <br/>
+      <p>To use it, open an audio source (like YouTube or Spotify web player) in another tab in Chrome, then come back to this tab and press the 'Choose tab' button. You'll see a pop up like the below. Press Choose Tab, then select the tab you want to visualize, then make sure "Share tab audio" is selected. Then press Share and your visualizer will begin.</p>
+      <br/>
+      <img class="aboutinstructions" src="./assets/instructions.png" />
+    </div>
   </body>
 </html>

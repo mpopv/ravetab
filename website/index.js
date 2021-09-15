@@ -1,4 +1,6 @@
-let [button, fullscreen] = Array.from(document.querySelectorAll("button"));
+let [choosetab, fullscreen, aboutbtn] = Array.from(document.querySelectorAll("button"));
+let about = document.querySelector(".about");
+let closeabout = document.querySelector(".closeabout");
 let screenConstraints = { video: true, audio: true };
 let canvas = document.querySelector("canvas");
 let canvasCtx = canvas.getContext("2d");
@@ -9,13 +11,23 @@ setInterval(50, function () {
   increment(rgb);
 });
 
-button.addEventListener("click", () => {
+choosetab.addEventListener("click", () => {
   document.querySelector(".warning").classList.add("hide");
   startCapture();
 });
 
 fullscreen.addEventListener("click", () => {
+  document.querySelector(".warning").classList.add("hide");
   canvas.requestFullscreen();
+});
+
+document.querySelector(".aboutbtn").addEventListener("click", () => {
+  document.querySelector(".warning").classList.add("hide");
+  about.classList.add("show");
+});
+
+closeabout.addEventListener("click", () => {
+  about.classList.remove("show");
 });
 
 window.addEventListener("resize", () => {
