@@ -1,3 +1,5 @@
+![](https://github.com/mpopv/ravetab/blob/master/website/assets/ravetab.jpg?raw=true)
+
 # ravetab
 
 [ravetab.com](https://ravetab.com) is an visualizer for one of your other Chrome tabs.
