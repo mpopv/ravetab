@@ -6,7 +6,11 @@
 
 ## What is this?
 
-It's an experiment to create visualizer in the browser using bleeding-edge web technologies. It uses [navigator.mediaDevices.getDisplayMedia](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getDisplayMedia) to record another tab, and then streams the recorded audio to the [Web Audio API](AudioContext) and extracts waveform data to [draw an oscilloscope to canvas](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Visualizations_with_Web_Audio_API). This all happens in [a single 170-line JavaScript file](https://github.com/mpopv/ravetab/blob/master/website/index.js).
+It's an experiment to create a visualizer entirely in the browser using new web technologies.
+
+It uses [navigator.mediaDevices.getDisplayMedia](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getDisplayMedia) to record another tab, and then streams the recorded audio to the [Web Audio API](AudioContext) and extracts waveform data to [draw an oscilloscope to canvas](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Visualizations_with_Web_Audio_API).
+
+This all happens in [a single 170-line JavaScript file](https://github.com/mpopv/ravetab/blob/master/website/index.js).
 
 ## How to use
 
