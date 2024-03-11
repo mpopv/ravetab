@@ -70,7 +70,7 @@ button {
   margin: 10px;
   padding: 10px 20px;
   background-color: black;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255,255,255,0.5);
   border: 1px solid rgba(255,255,255,0.225);
   cursor: pointer;
   border-radius: 4px;
