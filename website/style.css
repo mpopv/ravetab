@@ -118,3 +118,14 @@ button:hover {
 .about.show {
   display: initial;
 }
+label.control {
+  position: absolute;
+  bottom: 60px;
+  left: 5px;
+  color: white;
+}
+
+label.control select,
+label.control input {
+  margin-left: 5px;
+}
