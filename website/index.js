@@ -1,8 +1,11 @@
-let [choosetab, fullscreen, aboutbtn] = Array.from(
-  document.querySelectorAll("button")
-);
+let choosetab = document.querySelector(".choosetab");
+let fullscreen = document.querySelector(".fullscreen");
+let settingsbtn = document.querySelector(".settingsbtn");
+let aboutbtn = document.querySelector(".aboutbtn");
 let about = document.querySelector(".about");
 let closeabout = document.querySelector(".closeabout");
+let settings = document.querySelector(".settings");
+let closesettings = document.querySelector(".closesettings");
 let darkMaxInput = document.getElementById("darkMax");
 let waveStyleSelect = document.getElementById("waveStyle");
 let screenConstraints = { video: true, audio: true };
@@ -60,13 +63,22 @@ fullscreen.addEventListener("click", () => {
   canvas.requestFullscreen();
 });
 
-document.querySelector(".aboutbtn").addEventListener("click", () => {
+aboutbtn.addEventListener("click", () => {
   document.querySelector(".warning").classList.add("hide");
   about.classList.add("show");
 });
 
 closeabout.addEventListener("click", () => {
   about.classList.remove("show");
+});
+
+settingsbtn.addEventListener("click", () => {
+  document.querySelector(".warning").classList.add("hide");
+  settings.classList.add("show");
+});
+
+closesettings.addEventListener("click", () => {
+  settings.classList.remove("show");
 });
 
 window.addEventListener("resize", () => {

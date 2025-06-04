@@ -16,21 +16,26 @@
   <body>
     <canvas width="2000" height="1500"></canvas>
 
-    <button>Choose tab</button>
+    <button class="choosetab">Choose tab</button>
     <button class="fullscreen">Full screen</button>
+    <button class="settingsbtn">Settings</button>
     <button class="aboutbtn">About</button>
-    <label class="control">
-      Color intensity
-      <input id="darkMax" type="range" min="20" max="200" value="80" />
-    </label>
-    <label class="control">
-      Waveform style
-      <select id="waveStyle">
-        <option value="line" selected>Line</option>
-        <option value="circle">Circles</option>
-        <option value="both">Both</option>
-      </select>
-    </label>
+
+    <div class="settings">
+      <a href="#" tabindex="0" class="closesettings">Close this</a>
+      <label class="control">
+        Color intensity
+        <input id="darkMax" type="range" min="20" max="200" value="80" />
+      </label>
+      <label class="control">
+        Waveform style
+        <select id="waveStyle">
+          <option value="line" selected>Line</option>
+          <option value="circle">Circles</option>
+          <option value="both">Both</option>
+        </select>
+      </label>
+    </div>
 
     <div class="warning">
       <h2><span class="red">WARNING:</span> Flashing red lights</h2>
