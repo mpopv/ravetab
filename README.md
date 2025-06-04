@@ -26,7 +26,7 @@ The site also includes a built-in fullscreen mode, a short set of on-page instru
 - Analyzes the sound using the [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) and visualizes it on a `<canvas>`.
 - Dynamic background color and waveform that react to the incoming audio.
 - Optional fullscreen mode.
-- Adjustable color intensity and waveform style via on-page controls.
+ - Adjustable color intensity and waveform style via a settings dialog.
 - Optimized rendering with OffscreenCanvas and frame rate throttling.
 - Approximately 170 lines of plain JavaScript located in [`website/index.js`](website/index.js).
 
